@@ -1,0 +1,16 @@
+package sec03.ex03;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/login5")
+public class LoginServlet5 extends HttpServlet {
+	public void init() {
+		System.out.println("init 메소드 호출");
+	}
+
+	@Override
+	public void destroy() {
+		System.out.println("destroy 메서드 호출");
+	}
+}

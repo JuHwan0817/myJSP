@@ -1,0 +1,11 @@
+package sec04.ex01;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/loginTest")
+public class LoginTest extends HttpServlet{
+	public void init() {
+        System.out.println("init 메서드 호출");
+    }
+}
