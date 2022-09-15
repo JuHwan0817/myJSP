@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<meta charset="UTF-8">
+	<meta name="Author" content="정주환"/>
+	<meta name="Keywords" content="정주환의 포트폴리오"/>
+	<meta name="Description" content="정주환 포트폴리오"/>
+<head>	
+	<title>메인</title>
+	<link rel="stylesheet" href="css/menu.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/count.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="images/Beaver.ico" />
+	<script src="js/popup.js"></script>
+</head>
+<body onLoad="ddaycount()">
+	<div id="popWrap" class="ui-draggable" style="cursor: move;">
+		<div id="countwrap">
+		<h3 id="countment">2023년까지 남은 시간</h3>
+		<div class="counter">
+			<ul class="cf">
+				<li id="countD" class="firstli fl">
+					<img src="images/num0.gif" width="40" id="day100" class="fl" />
+					<img src="images/num0.gif" width="40" id="day10" class="fl" />
+					<img src="images/num0.gif" width="40" id="day1" class="fl" />
+					<p>days</p>
+				</li>
+				<li class="fl">
+					<img src="images/day_bg3.png" width="10" id="middle" class="fl" />
+				</li>
+				<li id="counterH" class="fl">
+					<img src="images/num0.gif" width="40" id="hour10" class="fl" alt="시간10의자리" />
+					<img src="images/num0.gif" width="40" id="hour1" class="fl" alt="시간1의자리" />
+					<p>hours</p>
+				</li>
+				<li class="fl">
+					<img src="images/day_bg3.png" width="10" id="middle" class="fl" />
+				</li>
+				<li id="counterM" class="fl">
+					<img src="images/num0.gif" width="40" id="min10" class="fl" alt="분10의자리" />
+					<img src="images/num0.gif" width="40" id="min1" class="fl" alt="분1의자리" />
+					<p>minutes</p>
+				</li>
+				<li class="fl">
+					<img src="images/day_bg3.png" width="10" id="middle" class="fl" />
+				</li>
+				<li id="counterS" class="fl">
+					<img src="images/num0.gif" width="40" id="sec10" class="fl" alt="분10의자리" />
+					<img src="images/num0.gif" width="40" id="sec1" class="fl" alt="분1의자리" />
+					<p>seconds</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<a href="#" class="close">일주일간 열지 않기</a>
+	</div>
+	<div id="header" class="cf">
+		<div id="headerWrap" class="cf">
+			<div id="headerTop" class="cf">
+				<div id="campusWrap">
+					<div class="home"><a href="#"><img src="images/homeIcon.png" width="20" height="20" alt="hometab"></a><span class="hidden">그린컴퓨터학원</span></div>
+					<div class="gijumSel"><a href="#">지점선택</a>
+						<div class="campusLink">
+							<ul>
+								<li><a href="#">안양</a></li>
+								<li><a href="#">강남</a></li>
+								<li><a href="#">종로</a></li>
+								<li><a href="#">신도림</a></li>
+								<li><a href="#">노원</a></li>
+								<li><a href="#">인천부평</a></li>
+								<li><a href="#">인천구월</a></li>
+								<li><a href="#">인천청라</a></li>
+								<li><a href="#">부천</a></li>
+								<li><a href="#">안산</a></li>
+								<li><a href="#">수원</a></li>
+								<li><a href="#">의정부</a></li>
+								<li><a href="#">일산</a></li>
+								<li><a href="#">성남</a></li>
+								<li><a href="#">청주</a></li>
+								<li><a href="#">대전둔산</a></li>
+								<li><a href="#">대전중앙로</a></li>
+								<li><a href="#">전주</a></li>
+								<li><a href="#">광주</a></li>
+								<li><a href="#">대구</a></li>
+								<li><a href="#">울산</a></li>
+								<li><a href="#">부산서면(본)</a></li>
+								<li class="last"><a href="#">부산경성대(별)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- class="campusWrap" -->			
+				<div id="headerLeft" class="cf">
+					<div class="bannerImg">
+						<img src="images/bestBrand_m_re.png" alt="">
+					</div>
+					<div class="bannerTxt">
+						<h2>2021 대한민국 브랜드 평가 1위</h2>
+						<a>KOREA BRAND EVALUATION FIRST PLACE 2021</a>
+					</div>
+				</div>
+				<div id="headerRight" class="cf">
+						<div class="mainLang">
+							<select name="selectLanguage" id="selectLanguage">
+								<option value="#">한국어</option>
+								<option value="#">영어</option>
+								<option value="#">일본어</option>
+								<option value="#">중국어</option>
+							</select>
+							<button><span>GO</span></button>
+						</div>
+						<h4>1588-9780</h4>
+						<div class="memberBox">
+							<ul>
+								<li><a href="sub2/login.html">로그인</a></li>
+								<li>|<a href="#">&nbsp;&nbsp;회원가입</a></li>
+								<li>|<a href="#">&nbsp;&nbsp;My Study</a></li>
+							</ul>
+						</div>
+				</div><!-- class="headerRight" -->
+				<h1><a href="index.html" tabindex="1"><img src="images/green_logo.png" alt="그린아카데미로고">그린컴퓨터학원</a></h1><!-- logo -->
+			</div><!-- id="headerTop" -->
+			
+			<div id="gnbSection">
+				<ul id="gnb" class="cf">
+					<li class="cf"><a href="sub2/login.html" title="아트웍" tabindex="2">아트웍</a>
+						<div class="artwork width100 cf fl">
+							<ul class="lnbWidth cf">
+								<li class="first1 fl">
+									<h3 class="silup">실업자</h3>
+									<dl>
+										<dt><a href="sub2/login.html">시각디자인(포토샵, 일러스트 GTQ)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">광고출판편집</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">아트웍 색채학</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">그래픽 심화</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<li class="fl">
+									<h3 class="jeajic">재직자</h3>
+									<dl>
+										<dt><a href="sub2/login.html">기초시각디자인</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">드로잉(인체 / 컨셉)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">스케치(실내 / 건축 / 제품)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">아트웍디자인(일러 + 포토)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">아이디어스케치(UI / UX)</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="cf"><a href="sub3/Qna.html" title="SW개발" tabindex="3">SW개발</a>
+						<div class="SW width100 cf fl">
+							<ul class="lnbWidth cf">
+								<div class="Set1 fl">
+									<li class="fl">
+										<h3 class="gukgi"> 국기 </h3>
+										<dl>
+											<dt><a href="#">자바(JAVA), 코틀린(Kotlin)웹&amp;앱</a></dt>
+											<dd></dd>
+											<dt><a href="#" class="br">[클라우드 운영 관리] AWS <br>클라우드 운영 및 파이썬</a></dt>
+											<dd></dd>
+											<dt><a href="#" class="brBot">[디지털컨버전스]자바(JAVA)웹개발자</a></dt>
+											<dt><a href="#">[빅데이터전문가]<br>플렛폼구축을 위한 빅데이터개발</a></dt>
+											<dd></dd>
+											<dd></dd>
+											<dt><a href="#">자바 웹개발자 양성</a></dt>
+											<dd></dd>
+											
+										</dl>
+									</li>
+									<li class="jeajic2 fl">
+										<dl>
+											<dt><a href="#" class="brBot">오라클기반 프레임워크 개발자<br> - 디지털컨버전스</a></dt>
+											<dd></dd>
+											<dt><a href="#" class="brBot">자바, 파이썬(JAVA,Pvthon)개발자 양성</a></dt>
+											<dd></dd>
+											<dt><a href="#" class="br">[과정평가형]<br>정보처리산업기사 (C, JAVA,파이썬)</a></dt>
+											<dd></dd>
+											<dt><a href="#">(디지털컨버전스)<br>UI/UX디자인 웹 퍼블리셔&amp;프론트엔드</a></dt>
+											<dd></dd>
+										</dl>
+									</li>
+								</div>
+								<li class="fl">
+									<h3 class="silup">실업자</h3>
+									<dl>
+										<dt><a href="sub2/login.html">Adobe XD를 활용한 인터렉티브 UI개발</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">파이썬을 활용한 데이터 분석</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">핵심 콕콕, 프론트엔드 웹 개발</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">핵심 콕콕, 파이썬 웹 개발</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">핵심 콕콕, 자바 웹 개발</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<li class="fl">
+									<h3 class="jeajic">재직자 </h3>
+									<dl>
+										<dt><a href="sub2/login.html">정보처리 자격증</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">C언어</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">자바(JAVA)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">PHP+Mysql</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">파이썬(Pvthon)-응용SW엔지니어링</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">C,C++ 프로그래밍-응용SW 엔지니어링</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">Javascript,jQuery-응용SW 엔지니어링</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="cf"><a href="sub1/board.html" title="웹디자인" tabindex="4">웹디자인</a>
+						<div class="webdesign width100 cf fl">
+							<ul class="lnbWidth cf">
+								<li class="first2 fl">
+									<h3 class="gukgi">국기</h3>
+									<dl>
+										<dt><a href="sub2/login.html" class="br">(디지털디자인)UI/UX 반응형 <br>웹디자인&amp;웹퍼블리셔(디자인&amp;코딩)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="brBot">UI/UX디자인 웹퍼블리셔&amp;프론트엔드</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="br">(디지털디자인)영상을 활용한<br>웹디자인&amp;웹퍼블리셔</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="brbrBot">[과정평가형]웹디자인기능사<br>(웹퍼블리셔,포토샵,일러스트,HTML5<br>,CSS3,jQuery)</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<li class="JSW fl">
+									<h3 class="jeajicSaup">재직자+사업주</h3>
+									<dl>
+										<dt><a href="sub2/login.html">피그마(Figma)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="br">웹퍼블리셔<br>(Javascript,jQuery,반응형웹디자인)기본</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="brBot">웹퍼블리셔<br>(웹표준,HTML5,CSS,반응형웹디자인)기본</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<div class="Set2 fl">
+									<li class="jeajicW fl">
+										<h3 class="jeajic "> 재직자 </h3>
+										<dl>
+											<dt><a href="sub2/login.html">Adobe DX를 활용한 인터렉티브 UI제작</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">그래픽 디자인(일러+포토)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">웹표준&amp;웹접근성</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">HTML5&amp;CSS3 </a></dt>
+											<dd></dd>
+										</dl>
+									</li>
+									<li class="jeajicW fl">
+										<h3 class="jeajic hidden"> 재직자 </h3>
+										<dl>
+											<dt><a href="sub2/login.html">Javascript&amp;jQuery </a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">PHP&amp;MySQL </a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">워드프레스(WordPress)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html" class="br">구글애널리틱스 분석 실무<br>,디지털온라인마케팅</a></dt>
+											<dd></dd>
+										</dl>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</li>
+					<li class="cf"><a href="sub2/login.html" title="편집디자인" tabindex="5">편집디자인</a>
+						<div class="publishing width100 cf fl">
+							<ul class="lnbWidth cf">
+								<li class="first2 fl">
+									<h3 class="gukgi">국기</h3>
+									<dl>
+										<dt><a href="sub2/login.html">디지털 퍼블리싱 편집디자이너</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="br">[과정평가형]전자출판기능사<br>(포토샵,일러스트,인디자인,E-BOOK)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="brBot">편집출판디자인<br>(포토샵,일러스트,인디자인,E-BOOK)</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<li class="fl">
+									<h3 class="silup">실업자</h3>
+									<dl>
+										<dt><a href="sub2/login.html">편집(포토샵,일러스트)광고출판시각</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="br">편집디자이너(포토샵, 일러스트<br>,인디자인, 편집디자인)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="brBot">웹퍼블리셔(웹표준,HTML5,CSS<br>,반응형웹디자인)기본</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<div class="Set2 fl">
+									<li class="fl">
+										<h3 class="jeajic"> 재직자 </h3>
+										<dl>
+											<dt><a href="sub2/login.html">포토샵(Photoshop)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">포토샵(Photoshop) 향상과정</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">일러스트레이터(illustrator)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">일러스트레이터(illustrator)향상과정</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">인디자인(Indesign)</a></dt>
+											<dd></dd>
+										</dl>
+									</li>
+									<li class="jeajic2 fl">
+										<dl>
+											<dt><a href="sub2/login.html">포토샵(Photoshop)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">포토샵(Photoshop) 향상과정</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">일러스트레이터(illustrator)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">일러스트레이터(illustrator)향상과정</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">인디자인(Indesign)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">그래픽 디자인(일러+포토)</a></dt>
+											<dd></dd>
+										</dl>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</li>
+					<li class="cf"><a href="sub3/Qna.html" title="건축·산업디자인" tabindex="6">건축·산업디자인</a>
+						<div class="build width100 cf fl">
+							<ul class="lnbWidth cf">
+								<li class="first2 fl">
+									<h3 class="gukgi">국기</h3>
+									<dl>
+										<dt><a href="sub2/login.html" class="br">[과정평가형]실내건축산업기사<br>
+										(인테리어, 캐드(CAD),맥스(MAX))
+										</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html class="brbrBot">[과정평가형]실내건축기사 <br>(인테리어,캐드(CAD),맥스(MAX))B</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="brBot">[환경디자인]실내디자인<br>(캐드, 스케치업, 맥스)</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<li class="fl">
+									<h3 class="silup">실업자</h3>
+									<dl>	
+										<dt><a href="sub2/login.html" class="br">[과정평가형]전산응용건축제도기능사<br>(실내건축, 캐드(CAD))</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="br brBot">실내건축설계<br>(AutoCAD,Sketch UP,스케치업)</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<div class="Set2 fl">
+									<li class="fl">
+										<h3 class="jeajic"> 재직자 </h3>
+										<dl>
+											<dt><a href="sub2/login.html">캐드(AutoCAD)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">스케치업(SketchUP)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">맥스(3D MAX,V-Ray)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">BIM(레빗,Revit)</a></dt>
+											<dd></dd>
+										</dl>
+									</li>
+									<li class="fl">
+										<h3 class="jeajic hidden"> 재직자 </h3>
+										<dl>
+											<dt><a href="sub2/login.html">라이노(Rhino 3D)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">카티아(CATIA)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">스케치(실내,건축,제품)</a></dt>
+											<dd></dd>
+											<dt><a href="sub2/login.html">전산응용건축제도</a></dt>
+											<dd></dd>
+										</dl>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</li>
+					<li class="cf"><a href="sub2/board.html" title="게임/영상/마야" tabindex="7">게임/영상/마야 </a>
+						<div class="game width100 cf fl">
+							<ul class="lnbWidth cf">
+								<li class="first2 fl">
+									<h3 class="gukgi">국기</h3>
+									<dl>
+										<dt><a href="sub2/login.html" class="br">(멀티미디어콘텐츠제작) 영상<br>(프리미어,에프터이펙트) 크리에이터
+										</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="brBot">맥스(3DMAX)를 활용한 <br>게임콘텐츠&amp;영상디자인</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								<li class="fl">
+									<h3 class="silup">실업자</h3>
+									<dl>
+										<dt><a href="sub2/login.html">마야(MAYA)3D그래팍 애니메이션</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="br">시각(영상)편집디자인<br>(프리미어, 애프터이펙트)입문</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html" class="brBot">영상편집(포토,일러,프리미어,에펙)</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+								
+								<li class="JJ fl">
+									<h3 class="jeajic">재직자</h3>
+									<dl>
+										<dt><a href="sub2/login.html">영상편집(프리미어,에프터이펙트)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">시네마4D(Cinema4D)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">영상편집제작-애프터이펙트(AfterEffect)</a></dt>
+										<dd></dd>
+										<dt><a href="sub2/login.html">컨셉아트(원화디자인)</a></dt>
+										<dd></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="cf"><a href="sub2/login.html" title="세무회계/OA" tabindex="8">세무회계/OA</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div id="section">
+		<div id="wrap">
+		<span class="left"><a href="#" onclick="return false"><img src="images/mainBleft.PNG" alt="이전"/></a></span>
+			<div id="Banner">
+				<ul class="cf">
+					<li style="left: 0; opacity: 1;"><a href="#"><img src="images/banner1.jpg" alt="배너 이미지1"/></a></li>
+					<li><a href="#"><img src="images/banner2.jpg" alt="배너 이미지1"/></a></li>
+					<li><a href="#"><img src="images/banner3.jpg" alt="배너 이미지1"/></a></li>
+				</ul>
+			</div><!-- id="mainBanner" -->
+			<span class="right"><a href="#" onclick="return false"><img src="images/mainBright.PNG" alt="다음"/></a></span>
+			<div id="quickMenu" class="cf">
+				<div id="quickIcon" class="cf">
+					<ul>
+						<li class="fl"><a href="#"><img src="images/quickImg1.png" alt="사전예약">사전예약</a></li>
+						<li class="fl"><a href="#"><img src="images/quickImg2.png" alt="위치안내">위치안내</a></li>
+						<li class="fl"><a href="#"><img src="images/quickImg3.png" alt="포트폴리오">포트폴리오</a></li>
+						<li class="long fl"><a href="#"><img src="images/quickImg4.png" alt="수강후기">수강후기</a></li>
+						<li class="long fl"><a href="#"><img src="images/quickImg5.png" alt="채용정보">채용정보</a></li>
+						<li class="last fl"><a href="#"><img src="images/quickImg6.png" alt="채용정보">온라인상담</a></li>
+					</ul>
+				</div><!-- id="quickIcon" -->
+				<div id="mainNotice" class="cf">
+					<div class="callSet cf">
+						<ul>
+							<li class="callNum fr">1588.9780</li>
+							<li class="callTime fr">평일 09:00~22:30 | 토요일 09:00~18:30</li>
+						</ul>
+					</div>
+					<div class="notice cf">
+						<span class="fl">NOTICE</span>
+						<p class="fl"><a href="#">이달의 추천과정</a></p>
+						<div class="arrowSet cf">
+							<p><a href="#"><img src="images/arrowTop.PNG" width="22px" height="17px;" alt="topArrow"></a></p>
+							<p><a href="#"><img src="images/arrowBot.PNG" width="22px" height="17px;" alt="bottomArrow"></a></p>
+						</div>
+					</div>
+				</div><!-- id="mainNotice" -->
+				<div id="quickSearch cf">
+					<div id="menuSearch" class="cf">
+						<div class="msTit fl">
+							<ul>
+								<h2 class="hidden">마감임박과정</h2>
+								<li class="searchTit">마감임박과정</li>
+								<li class="searchInfo"> | 기다리지 말고 바로 들으세요!</li>
+							</ul>
+						</div>
+						<div class="searchSet cf fl">
+							<input type="text" name="searchText" id="searchText" placeholder="원하는 과정명을 검색하세요.">
+							<input type="image" src="images/searchBtn.png" width="20px" height="20px" alt="searchBtn">
+						</div>
+					</div>
+					<div id="flowMenu" class="cf">
+ 						<div class="cellWrap cf">
+							<div class="flowCell1">
+								<ul>
+									<li><a href="#">
+										<img src="images/msListImg1.jpg" width="326px" height="auto" alt="빅데이터개발자과정">
+										<div class="flowCellInfo">
+											<p>sw개발</p>
+											<h5>[빅데이터전문가] 플랫폼구축을 위한 빅데이터개발자 과정(자바&amp;파이썬)</h5>
+										</div>
+									</a></li>
+								</ul>
+							</div>
+							<div class="flowCell2">
+								<ul>
+									<li><a href="#">
+										<img src="images/msListImg2.jpg" width="326px" height="auto" alt="빅데이터개발자과정">
+										<div class="flowCellInfo">
+											<p>sw개발</p>
+											<h5>(디지털컨버전스)자바(JAVA) 웹개발자 양성과정</h5>
+										</div>
+									</a></li>
+								</ul>
+							</div>
+							<div class="flowCell3">
+								<ul>
+									<li><a href="#">
+										<img src="images/msListImg3.jpg" width="326px" height="auto" alt="빅데이터개발자과정">
+										<div class="flowCellInfo">
+											<p>편집디자인</p>
+											<h5>편집출판디자인(일러,포토,인디자인,e-book)양성과정</h5>
+										</div>
+									</a></li>
+								</ul>
+							</div>
+							<div class="flowCell4">
+								<ul>
+									<li><a href="#">
+										<img src="images/msListImg4.jpg" width="326px" height="auto" alt="빅데이터개발자과정">
+										<div class="flowCellInfo">
+											<p>웹디자인</p>
+											<h5>(디지털디자인) UI/UX 반응형 웹디자인&amp;웹퍼블리셔(디자인&amp;코딩) 양성과정</h5>
+										</div>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					
+
+						<div class="arrowSet fl cf">
+							<img class="left fl" src="images/mainBleft.PNG" width="50px" height="50px">
+							<img class="right fr" src="images/mainBright.PNG" width="50px" height="50px">
+						</div>
+					</div>
+				</div><!-- id="quickSearch" -->
+			</div><!-- id="quickMenu" -->
+			<div id="portfolio">
+				<div id="pfTit">
+					<ul>
+						<li class="title">PORTFOLIO</li>
+						<li class="sub">포트폴리오</li>
+					</ul>
+				</div><!-- id="pfTit" -->
+				<div id="pfContent" class="cf">
+					<div class="pfWrap cf">
+						<div class="flowPf fr">
+							<div class="pfFlowCell1"><a href="#"><img src="images/pfcell1.jpg" width="195" alt="포트폴리오">오윤석 포트폴리오</a></div>
+							<div class="pfFlowCell2"><a href="#"><img src="images/pfcell2.jpg" width="195" alt="포트폴리오">손영채 포트폴리오</a></div>
+							<div class="pfFlowCell3"><a href="#"><img src="images/pfcell3.jpg" width="195" alt="포트폴리오">박지현 포트폴리오</a></div>
+							<div class="pfFlowCell4"><a href="#"><img src="images/pfcell4.jpg" width="195" alt="포트폴리오">김태영 포트폴리오</a></div>
+							<div class="arrowSet">
+								<a href="#"><img src="images/ArrowL_big.png" alt="arrow" class="left"></a>
+								<a href="#"><img src="images/ArrowR_big.png" alt="arrow" class="right"></a>
+							</div>
+						</div>
+						<p class="fr">
+							1 &nbsp;&nbsp;|&nbsp;&nbsp; 5 <br>
+							<span><br>PACKAGE DESIGN</span><br>
+							<span><br>mr.오 수강생</span>
+						</p>
+					</div>
+				</div><!-- id="pfContent" -->
+			</div><!-- id="portfolio" -->
+			<div id="studentReview">
+				<div id="reviewTitle">
+					<h5>그린이 당신의 꿈을 응원합니다!</h5>
+					<h6>WE SUPPORT YOUR DREAMS</h6>
+				</div><!-- id="reviewTitle" -->
+				<div id="jobInterview">
+					<p class="title">| JOB INTERVIEW</p>
+					<div class="studentImg cf">
+						<div class="titleInfo">
+							<p class="sttitle">포기하지 않고 자신감을 가지고 열심히하면<br>
+							이룰 수 있습니다!</p>
+							<p class="content">[안양 캠퍼스] 정주환 수료생<br>
+							CSS가 너무 재밌어요 ! 선생님 좋아요</p>
+						</div>
+					</div>
+				</div><!-- id="jobInterview" -->
+				<div id="courseReview" class="cf">
+					<p class="title fl">| COURSE REVIEW </p>
+					<p class="fr"><a href="#">+ 더보기</a></p>
+					<div class="flowWrap fl">
+						<ul>
+							<li class="cf">
+								<img class="fr" src="images/ArrowR.png" alt="">
+								<a class="fl" href="#">자바 & CSS 최고 !</a>
+								<p class="fl">안양</p>
+							</li>
+							<li class="cf">
+								<img class="fr" src="images/ArrowR.png" alt="">
+								<a class="fl" href="#">오윤석선생님 나빠요!</a>
+								<p class="fl">안양</p>
+							</li>
+							<li class="cf">
+								<img class="fr" src="images/ArrowR.png" alt="">
+								<a class="fl" href="#">즐거운 CSS!</a>
+								<p class="fl">안양</p>
+							</li>
+							<li class="cf">
+								<img class="fr" src="images/ArrowR.png" alt="">
+								<a class="fl" href="#">jQuery 어캄?</a>
+								<p class="fl">안양 정주환</p>
+							</li>
+							<li class="cf">
+								<img class="fr" src="images/ArrowR.png" alt="">
+								<a class="fl" href="#">자바가 재밌어요!</a>
+								<p class="fl">안양</p>
+							</li>
+							<li class="cf">
+								<img class="fr" src="images/ArrowR.png" alt="">
+								<a class="fl" href="#">우리 남은 5개월동안 어떡하냐</a>
+								<p class="fl">안양</p>
+							</li>
+							<li class="cf">
+								<img class="fr" src="images/ArrowR.png" alt="">
+								<a class="fl" href="#">잠은 많고 할건 많다</a>
+								<p class="fl">안양</p>
+							</li>
+						</ul>
+					</div>
+				</div><!-- id="courseReview" -->
+			</div><!-- id="studentReview" -->
+			<!-- <div id="empolySection">
+				<article class="content1 cf">
+					<h3 class="hidden">공지사항</h3>
+					<ul class="tab cf">
+						<li class="active tab1"><a href="http://www.hschool.co.kr" tabindex="6">공지사항</a></li>
+						<li class="tab2"><a href="http://www.hschool.co.kr" tabindex="7">QnA</a></li>
+					</ul>
+					<div class="tab_con cf">
+						<div class="board tab_view">
+							<ul>
+								<li class="popup"><a href="#" tabindex="8">1. 2022년 7월 17일 숙제 하는중</a><span>2022.07.30</span></li>
+								<li class="popup"><a href="#" tabindex="9">2. 2022년 7월 17일 숙제 하는중</a><span>2022.07.30</span></li>
+								<li class="popup"><a href="#" tabindex="10">3. 2022년 7월 17일 숙제 하는중</a><span>2022.07.30</span></li>
+								<li class="popup"><a href="#" tabindex="11">4. 2022년 7월 17일 숙제 하는중</a><span>2022.07.30</span></li>
+							</ul>
+						</div>
+						<div class="gallery">
+							<ul>
+								<li class="popup"><a href="#" tabindex="8">
+Q . 회원가입시 실명인증이 안...</a><span>2022.07.30</span></li>
+								<li class="popup"><a href="#" tabindex="9">
+Q . 각 지점마다따로 회...</a><span>2022.07.30</span></li>
+								<li class="popup"><a href="#" tabindex="10">
+Q . 사이트에서 온라인결제를 ...</a><span>2022.07.30</span></li>
+								<li class="popup"><a href="#" tabindex="11">
+Q . 다른 이름으로 개명했...</a><span>2022.07.30</span></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<div class="content2">
+					<div id="weater" class="cf">
+						<div class="weather fl">
+							<h1>Weather API</h1>
+							<h2> - 날씨 예보</h2>
+							<div class="ctemp">현재온도 : </div>
+							<div class="clowtemp">최저온도 : </div>
+							<div class="chightemp">최고온도 : </div>
+							<div class="cicon">아이콘 : </div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			</div><!-- id="empolySection" -->
+			<div id="channelSection">
+				<div id="csTit">
+					<h5>그린채널</h5>
+					<h6>너와 나의 연결 고리</h6>
+				</div><!-- id="csTit" -->
+				<div id="youtubeSection">
+					<p>YouTube</p>
+					<ul>
+						<li><a href="#"><img src="images/youtube1.PNG" width="455" alt="youtube"></a></li>
+						<li><a href="#"><img src="images/youtube2.PNG" width="455" alt="youtube"></a></li>
+						<li><a href="#"><img src="images/youtube3.PNG" width="455" alt="youtube"></a></li>
+					</ul>
+				</div><!-- id="youtubeSection" -->
+				<div id="snsSection">
+					<p>SNS</p>
+					<ul>
+						<li class="first"><a href="#"><img src="images/sns1.jpg" width="264" alt="youtube"></a></li>
+						<li><a href="#"><img src="images/sns2.jpg" width="264" alt="youtube"></a></li>
+						<li><a href="#"><img src="images/sns3.jpg" width="264" alt="youtube"></a></li>
+						<li><a href="#"><img src="images/sns4.jpg" width="264" alt="youtube"></a></li>
+						<li><a href="#"><img src="images/sns5.jpg" width="264" alt="youtube"></a></li>
+					</ul>				
+				</div><!-- id="snsSection" -->
+			</div><!-- id="snsSection" -->
+			<div id="quickInfo">
+				<ul>
+					<a href="#"><li class="fl">위치안내 &gt;</li></a>
+					<a href="#"><li class="fl">수강료조회 &gt;</li></a>
+					<a href="#"><li class="last fl">온라인상담 &gt;</li></a>
+				</ul>
+			</div><!-- id="quickInfo" -->
+		</div><!-- id="wrap" -->
+	</div>
+	<div id="footer">
+		<div id="familySite">
+			<div class="wrap">
+				<ul>
+					<li><a href="#"><img src="images/footerIcon1.png" alt="footerIcon"></a></li>
+					<li><a href="#"><img src="images/footerIcon2.png" alt="footerIcon"></a></li>
+					<li><a href="#"><img src="images/footerIcon3.png" alt="footerIcon"></a></li>
+					<li><a href="#"><img src="images/footerIcon4.png" alt="footerIcon"></a></li>
+					<li><a href="#"><img src="images/footerIcon5.png" alt="footerIcon"></a></li>
+					<li><a href="#"><img src="images/footerIcon6.png" alt="footerIcon"></a></li>
+					<li><a href="#"><img src="images/footerIcon7.png" alt="footerIcon"></a></li>
+					<li><a href="#"><img src="images/footerIcon8.png" alt="footerIcon"></a></li>
+				</ul>
+		</div>
+		</div>
+		<div class="wrap2">
+			<div id="footerWrap">
+				<div id="footBot">
+					<div id="footWrap">
+						<div class="icon"><img src="images/footerLogo.png" alt=""></div>
+						<div class="sns">
+							<ul>
+								<li><a href="#">페이스북</a></li>
+								<li>|</li>
+								<li><a href="#">카페</a></li>
+								<li>|</li>
+								<li><a href="#">블로그</a></li>
+								<li>|</li>
+								<li><a href="#">네이버TV</a></li>
+								<li>|</li>
+								<li><a href="#">유튜브</a></li>
+								<li>|</li>
+								<li><a href="#">그린매거진</a></li>
+							</ul>
+						</div>
+						<div class="bottom cb">
+							<ul>
+								<li><a href="#">이용약관</a></li>
+								<li>|</li>
+								<li><a class="import" href="#">개인정보보호정책</a></li>
+								<li>|</li>
+								<li><a href="#">제휴제안</a></li>
+								<li>|</li>
+								<li><a href="#">오류신고</a></li>
+								<li>|</li>
+								<li><a href="#">사이트맵</a></li>
+								<li>|</li>
+								<li><a href="#">e그린원격평생교육원</a></li>
+							</ul>
+						</div>
+						<div class="footInfo">
+							<p>대표자 : 김상곤 | 사업자등록번호 214-86-26812<br>
+							통신판매업신고 강남13717호 | 학원등록번호 : 강남 제 1101호<br>
+							주소 : 서울시 강남구 역삼동 815-4 만이빌딩 5층, 10층<br>
+							COPYRIGHT © 2021 GITACADEMY</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
