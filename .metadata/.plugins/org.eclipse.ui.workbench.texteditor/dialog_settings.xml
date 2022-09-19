@@ -8,6 +8,8 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="submit"/>
+			<item value="sendMember"/>
 			<item value="don"/>
 		</list>
 		<list key="replacehistory">
