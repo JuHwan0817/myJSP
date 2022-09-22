@@ -7,7 +7,8 @@
 <title>500 예외 처리 페이지</title>
 </head>
 <body>
-	<h1>죄송합니다. 서비스 실행 중 오류가 발생했습니다.</h1>
-	<h1>잠시후 다시 시도해 보세용</h1>
+	<%@ include file="../sub/main/header.jsp" %>
+	<img src="images/404.png" alt="" style="display:block; margin: 0 auto;"/>
+	<%@ include file="../sub/main/footer.jsp" %>
 </body>
 </html>
