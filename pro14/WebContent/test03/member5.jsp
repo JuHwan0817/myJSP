@@ -29,7 +29,6 @@
 			<td width="7%"><b>키</b></td>
 		</tr>
 		<c:choose>
-		<!-- 빈 문자열인지 체크 -->
 			<c:when test="${empty name }">
 				<tr align="center">
 					<td colspan=5>이름을 입력하세요!!</td>
