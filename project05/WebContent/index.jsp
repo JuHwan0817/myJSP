@@ -1,10 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<html lang="ko">
+	<meta charset="UTF-8">
+	<meta name="Author" content="정주환"/>
+	<meta name="Keywords" content="정주환의 포트폴리오"/>
+	<meta name="Description" content="정주환 포트폴리오"/>
+<head>	
+	<title>메인</title>
+	<link rel="stylesheet" href="css/menu.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
 </head>
 <body>
 	<%@ include file="sub/main/header.jsp" %>
