@@ -6,12 +6,12 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
-<%-- <c:set> 태그를 이용해서 변수를 선언 value 속성에는 표현언어를 사용해서 초기화 할 수 있다. --%>
-<c:set var="id" value="hong" scope="page" />
-<c:set var="pwd" value="1234" scope="page" />
-<c:set var="name" value="${'홍길동' }" scope="page" />
-<c:set var="age" value="${22 }" scope="page" />
-<c:set var="height" value="${177 }" scope="page" />
+	<c:set var="id" value="hong" scope="page" />
+	<c:set var="pwd" value="1234" scope="page" />
+	<%-- <c:set var="name" value="${'홍길동' }" scope="page" /> --%>
+	<c:set var="age" value="${22 }" scope="page" />
+	<c:set var="height" value="${177 }" scope="page" />
+	
 
 <!DOCTYPE html>
 <html>
@@ -28,14 +28,23 @@
 			<td width="7%"><b>나이</b></td>
 			<td width="7%"><b>키</b></td>
 		</tr>
-		<!-- 표현언어로 변수에 바로 접근하여 값을 출력 -->
-		<tr align="center">
-			<td>${id}</td>
-			<td>${pwd}</td>
-			<td>${name}</td>
-			<td>${age}</td>
-			<td>${height}</td>
-		</tr>
+		<c:choose>
+		<!-- 빈 문자열인지 체크 -->
+			<c:when test="${empty name }">
+				<tr align="center">
+					<td colspan=5>이름을 입력하세요!!</td>
+				</tr>
+			</c:when>
+			<c:otherwise>
+				<tr align="center">
+					<td>${id}</td>
+					<td>${pwd}</td>
+					<td>${name}</td>
+					<td>${age}</td>
+					<td>${height}</td>
+				</tr>
+			</c:otherwise>
+		</c:choose>
 	</table>
 </body>
 </html>
