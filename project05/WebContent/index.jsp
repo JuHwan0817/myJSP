@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ include file="../main/header.jsp" %>
+	<%@ include file="sub/main/header.jsp" %>
 	<div id="section">
 		<div id="wrap">
 			<div id="mainBanner">
@@ -288,6 +288,6 @@
 			</div><!-- id="quickInfo" -->
 		</div><!-- id="wrap" -->
 	</div>
-	<%@ include file="../main/footer.jsp" %>
+	<%@ include file="sub/main/footer.jsp" %>
 </body>
 </html>
