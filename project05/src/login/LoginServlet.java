@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/login")
+@WebServlet("/aylogin")
 public class LoginServlet extends HttpServlet{
 
 	@Override
@@ -52,9 +52,12 @@ public class LoginServlet extends HttpServlet{
 			out.print("alert('존재하지 않는 계정입니다.');");
 			out.print("</script>");
 			out.print("<html><body>");
-			out.print("<a href='sub/sub2/login.html'>다시 로그인</a><br>");
-			out.print("<a href='sub/sub3/sign.html'>회원가입</a>");
+			out.print("<a href='subPage/sub03/index.html'>다시 로그인</a><br>");
+			out.print("<a href='subPage/sub04/index.html'>회원가입</a>");
 			out.print("</body></html>");
+			/*
+			
+			*/
 		}
 		
 	}

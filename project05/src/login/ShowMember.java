@@ -40,10 +40,10 @@ public class ShowMember extends HttpServlet {
 				out.print("<a href='index.html'>메인 페이지로 이동</a>");
 				out.print("</body></html>");
 			} else {
-				response.sendRedirect("sub/sub2/login.html");
+				response.sendRedirect("subPage/sub03/index.html");
 			}
 		} else {
-			response.sendRedirect("sub/sub2/login.html");
+			response.sendRedirect("subPage/sub03/index.html");
 		}
 		
 	}

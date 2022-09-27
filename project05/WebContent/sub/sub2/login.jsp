@@ -34,11 +34,11 @@
 					<h4>ID 로그인</h4>
 					<div id="RightButton">
 						<div id="Button4">
-							<input type="text" name="loginId" placeholder="아이디">
-							<input type="password" name="loginPWD" placeholder="비밀번호">
+							<input type="text" name="loginId" placeholder="아이디" value="juhwan203">
+							<input type="password" name="loginPWD" placeholder="비밀번호" value="ay2111!!">
 						</div>
 						<div id="Button5">
-							<a href="">로그인</a>
+							<a href="http://127.0.0.1:8090/project05/index.jsp">로그인</a>
 						</div>
 						<div id="Button6">
 							<a href="">아이디 찾기</a>
