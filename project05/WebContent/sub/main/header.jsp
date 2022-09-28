@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    isELIgnored="false" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+	request.setCharacterEncoding("utf-8");
+%>
 <!DOCTYPE html>
 <html lang="ko">
 	<meta charset="UTF-8">
@@ -11,6 +17,9 @@
 	<link rel="stylesheet" href="css/layout.css"/>
 </head>
 <body>
+<%-- <fmt:setLocale value="en_US" /> --%>
+<fmt:setLocale value="ko_KR" />
+<fmt:bundle basename="resource.member">
 	<div id="header" class="cf">
 		<div id="headerWrap" class="cf">
 			<div id="headerTop" class="cf">
@@ -79,7 +88,7 @@
 			
 			<div id="gnbSection">
 				<ul id="gnb" class="cf">
-					<li class="cf"><a href="../../sub/sub2/login.jsp" title="아트웍" tabindex="2">아트웍</a>
+					<li class="cf"><a href="../../sub/sub2/login.jsp" title="아트웍" tabindex="2"><fmt:message key="mem.memu1"/></a>
 						<div class="artwork width100 cf fl">
 							<ul class="lnbWidth cf">
 								<li class="first1 fl">
@@ -113,7 +122,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="cf"><a href="../../sub/sub2/login.jsp" title="SW개발" tabindex="3">SW개발</a>
+					<li class="cf"><a href="../../sub/sub2/login.jsp" title="SW개발" tabindex="3"><fmt:message key="mem.memu2"/></a>
 						<div class="SW width100 cf fl">
 							<ul class="lnbWidth cf">
 								<div class="Set1 fl">
@@ -183,7 +192,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="cf"><a href="../../sub/sub2/login.jsp" title="웹디자인" tabindex="4">웹디자인</a>
+					<li class="cf"><a href="../../sub/sub2/login.jsp" title="웹디자인" tabindex="4"><fmt:message key="mem.memu3"/></a>
 						<div class="webdesign width100 cf fl">
 							<ul class="lnbWidth cf">
 								<li class="first2 fl">
@@ -241,7 +250,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="cf"><a href="../../sub/sub2/login.jsp" title="편집디자인" tabindex="5">편집디자인</a>
+					<li class="cf"><a href="../../sub/sub2/login.jsp" title="편집디자인" tabindex="5"><fmt:message key="mem.memu4"/></a>
 						<div class="publishing width100 cf fl">
 							<ul class="lnbWidth cf">
 								<li class="first2 fl">
@@ -302,7 +311,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="cf"><a href="../../sub/sub2/login.jsp" title="건축·산업디자인" tabindex="6">건축·산업디자인</a>
+					<li class="cf"><a href="../../sub/sub2/login.jsp" title="건축·산업디자인" tabindex="6"><fmt:message key="mem.memu5"/></a>
 						<div class="build width100 cf fl">
 							<ul class="lnbWidth cf">
 								<li class="first2 fl">
@@ -358,7 +367,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="cf"><a href="../../sub/sub2/login.jsp" title="게임/영상/마야" tabindex="7">게임/영상/마야 </a>
+					<li class="cf"><a href="../../sub/sub2/login.jsp" title="게임/영상/마야" tabindex="7"><fmt:message key="mem.memu6"/></a>
 						<div class="game width100 cf fl">
 							<ul class="lnbWidth cf">
 								<li class="first2 fl">
@@ -399,10 +408,11 @@
 							</ul>
 						</div>
 					</li>
-					<li class="cf"><a href="../../sub/sub2/login.jsp" title="세무회계/OA" tabindex="8">세무회계/OA</a></li>
+					<li class="cf"><a href="../../sub/sub2/login.jsp" title="세무회계/OA" tabindex="8"><fmt:message key="mem.memu7"/></a></li>
 				</ul>
 			</div>
 		</div>	
 	</div>
+	</fmt:bundle>
 </body>
 </html>
