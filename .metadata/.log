@@ -11478,3 +11478,6 @@ Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/project05/W
 
 !ENTRY org.eclipse.jface.text 2 0 2022-09-28 09:30:08.262
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2022-09-28 10:35:31.558
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
