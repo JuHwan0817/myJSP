@@ -12,37 +12,35 @@
 	<link rel="stylesheet" href="css/layout.css"/>
 	<script>
 		function fn_sendMember(){
-		   // 자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다
-		   var frmMember=document.frmMember;
-		   var id=frmMember.id.value;
-		   var pwd=frmMember.pwd.value;
-		   var name=frmMember.name.value;
-		   var email=frmMember.email.value;
-		   if(id.length==0 ||id==""){
+		   var memberForm=document.memberForm;
+		   var id=memberForm.id.value;
+		   var pwd=memberForm.pass.value;
+		   var name=memberForm.name.value;
+		   var email=memberForm.email.value;
+		   if(id.length==0 || id=="") {
 			  alert("아이디는 필수입니다.");
-		   }else if(pwd.length==0 ||pwd==""){
+		   } else if(pwd.length==0 || pwd=="") {
 			  alert("비밀번호는 필수입니다.");
-		   }else if(name.length==0 ||name==""){
+		   } else if(name.length==0 || name=="") {
 			  alert("이름은 필수입니다.");
-		   }else if(email.length==0 ||email==""){
+		   } else if(email.length==0 || email=="") {
 			  alert("이메일은 필수입니다.");
-		   }else{
-			  // 전송 방법을 post로 지정
-			  frmMember.method="post";
-			  // 서블릿 매핑 이름을 member3으로 지정
-			  frmMember.action="/project03/member3";
-			  // 서블릿으로 전송
-			  frmMember.submit();
+		   } else {
+			   	alert("회원가입 성공!");
+			   	location.reload(true);
+				memberForm.method="POST";
+				memberForm.action="/project05/checkMember";
+				memberForm.submit();
 		   } 
 		}
-</script>
+	</script>
 </head>
 <body>
 	<%@ include file="../main/header.jsp" %>
 	<section>
 		<div id="mainContent">
 			<div id="joinBox">
-				<form name="member_form" method="post" action="member_insert.php">
+				<form name="member_form" method="post" action="fsg.kaerhgiawerjgbfaedrl">
 					<input type="hidden" id="pInput" value="no" name="check">
 					<h2>회원가입</h2>
 					<div class="form id">
@@ -88,8 +86,8 @@
 					</div>
 					<div class="clear"></div>
 					<div class="buttons">
-						<span class="submit" onclick="check_input()">등록</span>
-						<span class="cancle" onclick="reset_form()">취소</span>
+						<input class="submit" onclick="fn_sendMember()" type="submit" value="등록"><!-- 등록</span> -->
+						<input class="cancle" onclick="reset_form()" type="reset" value="취소"><!-- 취소</span> -->
 					</div>
 				</form>
 			</div>

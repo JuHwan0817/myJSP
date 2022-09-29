@@ -72,7 +72,7 @@ public class MemberController extends HttpServlet {
 		}else {
 			List<MemberVO> membersList = memberDAO.listMembers();
 			request.setAttribute("membersList", membersList);
-			nextPage = "/test03/listMembers.jsp";
+			nextPage = "/sub3/listMembers.jsp";
 		}
 		RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);
 		dispatch.forward(request, response);

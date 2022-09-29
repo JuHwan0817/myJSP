@@ -1,11 +1,11 @@
 package sec03.brd01;
 
-import java.awt.List;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -26,20 +26,20 @@ public class BoardDAO {
 		}
 	}
 	
-	public List selectAllarticles() {
+	public List selectAllArticles() {
 		List articlesList = new ArrayList();
 		try {
 			conn = dataFactory.getConnection();
-			String query = "SELECT LEVEL,articleNO,parentNO,title,content,id,writeDate"
-					+ "from t_board"
-					+ "START WITH parenNo=0" + "CONNECT BY PRIOR articleNO=parentNO"
-					+ "ORDER SIBLINGS BY articleNO DESC";
+			String query = "SELECT LEVEL,articleNO,parentNO,title,content,id,writeDate" 
+			             + " from t_board"
+					     + " START WITH  parentNO=0" + " CONNECT BY PRIOR articleNO=parentNO"
+					     + " ORDER SIBLINGS BY articleNO DESC";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();
-			while(rs.next()) {
+			while (rs.next()) {
 				int level = rs.getInt("level");
-				int artocleNO = rs.getInt("articleNO");
+				int articleNO = rs.getInt("articleNO");
 				int parentNO = rs.getInt("parentNO");
 				String title = rs.getString("title");
 				String content = rs.getString("content");
@@ -58,29 +58,12 @@ public class BoardDAO {
 			rs.close();
 			pstmt.close();
 			conn.close();
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return articlesList;
-	}
+	}	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

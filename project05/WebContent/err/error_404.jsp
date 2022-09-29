@@ -5,10 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>404 예외 처리 페이지</title>
+<link rel="stylesheet" href="css/layout.css"/>
 </head>
 <body>
-	<%@ include file="../sub/main/header.jsp" %>
+	<%@ include file="header.jsp" %>
 	<img src="images/404.png" alt="" style="display:block; margin: 0 auto;"/>
-	<%@ include file="../sub/main/footer.jsp" %>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>
