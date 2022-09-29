@@ -224,3 +224,6 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.jface.text 2 0 2022-09-29 09:44:46.402
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-09-29 10:19:06.342
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
