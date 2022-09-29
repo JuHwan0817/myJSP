@@ -54,8 +54,10 @@
 	</c:when>
 </c:choose>
 	</table>  
-	<a href="${contextPath }/member/memberForm.do"><p class="cls2">회원 가입하기</p></a>
-			
+	<a href="#"><p class="cls2">회원 가입하기</p></a>		
 		
 </body>
 </html>
+
+
+
